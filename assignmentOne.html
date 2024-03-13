@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            width: 200px;
+            height: 10px;
+            border: 3px solid rgb(182, 101, 51);
+            padding: 20px;
+        }
+
+        button{
+            padding: 18px 80px;
+            border: 2px solid slateblue;
+            background-color: hsl(0, 51%, 40%);
+            color: white;
+            font-weight: 900;
+            
+        }
+
+        button:hover{
+            background-color: hsl(0, 51%, 10%);
+            cursor: pointer;
+        }
+
+        /* #ageDisplay{
+            width: 500px;
+            height: 50px;
+            border: 2px solid black;
+        } */
+
+
+    </style>
+</head>
+
+<body>
+    <input type="number" placeholder="Enter Your Age" id="ageEnter">
+
+    <button onclick="calAgeUser()">Calculate Age</button>
+
+
+
+</body>
+
+</html>
+<script>
+
+
+    let age = 18;
+    function calAgeUser() {
+
+        let userAge = document.getElementById('ageEnter').value;
+        if (userAge >= age) {
+            alert("You are " + userAge + " Years Old, You are Eligible To Proceed ");
+        } else {
+            alert("You are " + userAge + " Year Old, And You are not Eligible to Proceed")
+        }
+    }
+
+</script>

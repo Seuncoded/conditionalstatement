@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+        input {
+            width: 200px;
+            height: 10px;
+            border: 2px solid rgb(51, 182, 125);
+            padding: 20px;
+        }
+
+        button{
+            padding: 18px 80px;
+            border: 2px solid slateblue;
+            background-color: hsl(218, 56%, 31%);
+            color: white;
+            font-weight: 900;
+            
+        }
+
+        button:hover{
+            background-color: hsl(218, 56%, 40%);
+            cursor: pointer;
+        }
+
+        /* #ageDisplay{
+            width: 500px;
+            height: 50px;
+            border: 2px solid black;
+        } */
+
+
+    </style>
+</head>
+
+<body>
+    <input type="number" placeholder="Guess A Number" id="ageEnterOne">
+    <input type="number" placeholder="Guess Another Number" id="ageEnterTwo">
+
+    <button onclick="calAgeUser()">Calculate Age</button>
+
+
+
+</body>
+
+</html>
+<script>
+
+
+
+    function calAgeUser() {
+
+        let userAgeOne = document.getElementById('ageEnterOne').value;
+        let userAgeTwo = document.getElementById('ageEnterTwo').value;
+        if (userAgeOne == userAgeTwo) {
+            alert("You guess both number correctly");
+            console.log("You guess both number correctly");
+        } else {
+            alert("You guess both number incorrectly")
+            console.log("You guess both number incorrectly");
+        }
+    }
+
+</script>
